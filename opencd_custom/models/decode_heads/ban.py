@@ -170,7 +170,7 @@ class BitemporalAdapterNetwork(nn.Module):
         return features
 
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class BitemporalAdapterHead(BaseDecodeHead):
     """Bi-Temporal Adapter Network (BAN) for Remote Sensing
     Image Change Detection.

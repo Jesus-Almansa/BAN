@@ -66,6 +66,8 @@ def main():
         cfg.work_dir = args.work_dir
     elif cfg.get('work_dir', None) is None:
         # use config filename as default work_dir if cfg.work_dir is None
+        print(f"XXXXXXXXXXXXXXXXXXXX {osp.join('./work_dirs',osp.splitext(osp.basename(args.config))[0])}")
+        
         cfg.work_dir = osp.join('./work_dirs',
                                 osp.splitext(osp.basename(args.config))[0])
 

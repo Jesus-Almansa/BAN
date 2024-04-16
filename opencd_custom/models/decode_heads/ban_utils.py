@@ -281,7 +281,7 @@ class MixFFN(BaseModule):
         return identity + self.dropout_layer(out)
 
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class BAN_MLPDecoder(BaseModule):
     def __init__(self,
                  in_channels,
@@ -368,7 +368,7 @@ class BAN_MLPDecoder(BaseModule):
         return out
 
 
-@MODELS.register_module()
+#@MODELS.register_module()
 class BAN_BITHead(BaseModule):
     """BIT Head
 
